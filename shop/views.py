@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .forms import DemoForm
 
 # Create your views here.
-def index(request):
-    return render(request, 'index.html', {})
+def shop_index(request):
+    form = DemoForm()
+    return render(request, 'shop_index.html', {'form': form})
