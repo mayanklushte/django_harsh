@@ -4,5 +4,5 @@ from .forms import DemoForm
 
 # Create your views here.
 def shop_index(request):
-    form = DemoForm()
-    return render(request, 'shop_index.html', {'form': form})
+    
+    return render(request, 'shop_index.html')
